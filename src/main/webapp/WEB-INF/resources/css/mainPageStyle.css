@@ -1,8 +1,9 @@
 #simpleBtn {
+    display: table;
     margin: 0 auto;
 }
 #helloText {
-    margin: 0 auto;
+    text-align: center;
 }
 #mainContainer {
     margin: 0 auto;
