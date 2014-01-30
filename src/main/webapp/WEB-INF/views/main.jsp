@@ -13,6 +13,28 @@
     <h4 id="helloText">Hello to the Telephone book</h4>
     <div id="mainContainer" class="container">
         <button id="simpleBtn" type="button" class="btn btn-default">Простая кнопочка</button>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Initials</th>
+                    <th>Phone number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Anton</td>
+                    <td>0675407488</td>
+                </tr>
+                <tr>
+                    <td>Anton</td>
+                    <td>0675407488</td>
+                </tr>
+                <tr>
+                    <td>Anton</td>
+                    <td>0675407488</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
