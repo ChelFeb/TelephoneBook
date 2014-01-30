@@ -5,15 +5,27 @@
 <script type="text/javascript" src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
 <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/resources/css/bootstrap.min.css" />"/>
 <link rel="stylesheet" media="screen" type="text/css" href="<c:url value="/resources/css/mainPageStyle.css" />"/>
+
 <html>
 <head>
     <title>TelephoneBook</title>
 </head>
 <body>
-    <h4 id="helloText">Hello to the Telephone book</h4>
+    <div id="headWelcome" class="text-info">
+        <h4 id="helloText">Hello to the Telephone book</h4>
+    </div>
     <div id="mainContainer" class="container">
-        <button id="simpleBtn" type="button" class="btn btn-default">Простая кнопочка</button>
-        <table class="table">
+        <button id="simpleBtn" type="button" class="btn btn-default" >Добавить контакт</button>
+        <input id="search" type="text" placeholder="Найти контакт...">
+
+        <div id="bookBlock">
+            <div  id="alphabetSearch" class="btn-group btn-group-vertical">
+                <button class="btn">А</button>
+                <button class="btn">Б</button>
+                <button class="btn">В</button>
+                <button class="btn">Г</button>
+            </div>
+            <table class="table-hover table-striped table-condensed">
             <thead>
                 <tr>
                     <th>Initials</th>
@@ -22,7 +34,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Anton</td>
+                    <td>Anton Romankov Olegovich</td>
                     <td>0675407488</td>
                 </tr>
                 <tr>
@@ -35,6 +47,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
     </div>
 </body>
 </html>
