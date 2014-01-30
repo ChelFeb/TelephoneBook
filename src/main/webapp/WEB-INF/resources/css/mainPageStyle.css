@@ -1,0 +1,13 @@
+#simpleBtn {
+    display: table;
+    margin: 0 auto;
+}
+#helloText {
+    text-align: center;
+}
+#mainContainer {
+    margin: 0 auto;
+    height: 30%;
+    width: 70%;
+    background-color: #c0c0c0;
+}
