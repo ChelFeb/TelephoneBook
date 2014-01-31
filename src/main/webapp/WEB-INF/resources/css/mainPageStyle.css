@@ -1,10 +1,13 @@
 #simpleBtn {
     display: table;
     margin: 0 auto;
+    float: right;
 }
+
 #helloText {
     text-align: center;
 }
+
 #mainContainer {
     margin: 0 auto;
     height: auto;
@@ -16,18 +19,25 @@
     height: auto;
     background-color: #f8f8ff;
 }
+
 #search {
+    float: left;
+
 }
+
 table {
-    width: 94%;
+    width: 100%;
     height: auto;
     float: right;
 }
+
 #alphabetSearch {
     float: left;
     margin-top: 1%;
     width: 5%;
+    height: auto;
 }
+
 #addPerson {
     width: 40%;
 }

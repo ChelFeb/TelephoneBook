@@ -17,33 +17,35 @@
     <div id="headWelcome" class="text-info">
         <h4 id="helloText">Hello to the Telephone book</h4>
     </div>
-    <div id="mainContainer" class="container">
-        <button id="simpleBtn" type="button" class="btn btn-default" >Добавить контакт</button>
-        <input id="search" type="text" placeholder="Найти контакт...">
+    <div class="row">
+        <div id="mainContainer" class="container">
 
-        <div id="bookBlock">
-            <div  id="alphabetSearch" class="btn-group btn-group-vertical">
-                <button class="btn">А</button>
-                <button class="btn">Б</button>
-                <button class="btn">В</button>
-                <button class="btn">Г</button>
-            </div>
-            <table class="table-hover table-striped table-condensed">
-            <thead>
-                <tr>
-                    <th>Initials</th>
-                    <th>Phone number</th>
-                </tr>
-            </thead>
-            <c:forEach items="${personList}" var="element" >
-            <tbody>
-                <tr>
-                    <td>${element.initials}</td>
-                    <td>${element.phoneNumber}</td>
-                </tr>
-            </tbody>
-            </c:forEach>
-        </table>
+            <input id="search" type="text" placeholder="Найти контакт..." autocomplete="off">
+            <button id="simpleBtn" type="button" class="btn btn-default" >Добавить контакт</button>
+
+                <%--<div  id="alphabetSearch" class="btn-group btn-group-vertical">--%>
+                    <%--<button class="btn">А</button>--%>
+                    <%--<button class="btn">Б</button>--%>
+                    <%--<button class="btn">В</button>--%>
+                    <%--<button class="btn">Г</button>--%>
+                <%--</div>--%>
+
+                <table class="table-hover table-striped table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Initials</th>
+                            <th>Phone number</th>
+                        </tr>
+                    </thead>
+                    <c:forEach items="${personList}" var="element" >
+                    <tbody>
+                        <tr>
+                            <td>${element.initials}</td>
+                            <td>${element.phoneNumber}</td>
+                        </tr>
+                    </tbody>
+                    </c:forEach>
+                </table>
         </div>
     </div>
 
