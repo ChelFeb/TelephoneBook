@@ -7,9 +7,8 @@
 }
 #mainContainer {
     margin: 0 auto;
-    height: 30%;
+    height: auto;
     width: 55%;
-    /*background-color: #c0c0c0;*/
 }
 
 #headWelcome {
@@ -21,11 +20,22 @@
 }
 table {
     width: 94%;
-    height: 100%;
-    float: right;;
+    height: auto;
+    float: right;
 }
 #alphabetSearch {
+    float: left;
     margin-top: 1%;
     width: 5%;
+}
+#addPerson {
+    width: 40%;
+}
 
+#addPerson {
+    display: none;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 20px;
 }

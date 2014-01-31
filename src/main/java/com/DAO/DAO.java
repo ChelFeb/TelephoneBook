@@ -54,6 +54,7 @@ public class DAO <T extends HibernateEntity> {
                 result.add(typeElement);
             }
         }
+        session.close();
         return result;
     }
 }
