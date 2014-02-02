@@ -1,6 +1,6 @@
 <persistence-unit name="TelephoneBookPU" transaction-type="RESOURCE_LOCAL">
-    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-    <class>com.onlineshop.mapping.Customer</class>
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.app.Person</class>
     <properties>
         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/telephoneBook"/>
         <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
