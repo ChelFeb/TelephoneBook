@@ -7,4 +7,15 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+
+
+    $("tbody").mousemove(function() {
+        var buttons = $(this).find("button");
+        buttons.css("opacity" , 0.8);
+    });
+    $("tbody").mouseout(function() {
+        var buttons = $(this).find("button");
+        buttons.css("opacity" , 0.3);
+    });
+
 });
