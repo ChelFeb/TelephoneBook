@@ -21,8 +21,9 @@
 <div class="row">
     <div id="mainContainer" class="container">
 
-        <input id="search" type="text" placeholder="Найти контакт..." autocomplete="off">
+        <%--<input class="select2-default" id="search" type="text" placeholder="Найти контакт..." autocomplete="off">--%>
         <button id="simpleBtn" type="button" class="btn btn-default">Добавить контакт</button>
+
 
         <table class="table-hover table-striped table-condensed">
             <thead>

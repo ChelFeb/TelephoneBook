@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+    <table name="persons">
+        <column>id</column>
+        <column>initials</column>
+        <column>phoneNumber</column>
+        <row>
+            <value>1</value>
+            <value>Test</value>
+            <value>1234</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>Test1</value>
+            <value>4321</value>
+        </row>
+    </table>
+</dataset>

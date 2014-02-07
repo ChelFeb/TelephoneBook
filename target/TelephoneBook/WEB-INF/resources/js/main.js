@@ -7,6 +7,10 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $(".deleteBtn").click(function() {
+        $("#deletePerson").val($(this).attr("userId"));
+        $("#deletePerson").click();
+    });
 
 
     $("tbody").mousemove(function() {
