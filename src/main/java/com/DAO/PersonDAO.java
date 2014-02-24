@@ -9,4 +9,5 @@ public interface PersonDAO {
     public Person getPersonById(int id);
     public List<Person> getAllPerson();
     public void deleteById(int id);
+    public List<Person> searchUsersByName(String name);
 }

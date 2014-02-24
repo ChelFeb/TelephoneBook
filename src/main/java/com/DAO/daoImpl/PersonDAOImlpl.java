@@ -38,4 +38,10 @@ public class PersonDAOImlpl implements PersonDAO {
     public void deleteById(int id) {
         em.remove(em.find(Person.class, id));
     }
+
+    @Override
+    public List<Person> searchUsersByName(String name) {
+        return em.createQuery("SELECT p FROM com.app.Person p WHERE p.initials LIKE :searchSymbol")
+                .setParameter("searchSymbol", "%"+name+"%").getResultList();
+    }
 }

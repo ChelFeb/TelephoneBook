@@ -20,10 +20,9 @@
 </div>
 <div class="row">
     <div id="mainContainer" class="container">
-
-        <%--<input class="select2-default" id="search" type="text" placeholder="Найти контакт..." autocomplete="off">--%>
+        <input name="searchInitial" class="select2-default" id="search" type="text" placeholder="Найти контакт..."
+               autocomplete="off">
         <button id="simpleBtn" type="button" class="btn btn-default">Добавить контакт</button>
-
 
         <table class="table-hover table-striped table-condensed">
             <thead>
@@ -38,8 +37,7 @@
                     <td>${element.initials}</td>
                     <td>${element.phoneNumber}</td>
                     <td>
-                        <button class="fuzzy deleteBtn" class="btn-danger" userId="${element.id}" > delete
-                        </button>
+                        <button class="fuzzy deleteBtn" class="btn-danger" userId="${element.id}">delete</button>
                     </td>
                 </tr>
                 </tbody>
@@ -49,7 +47,8 @@
 </div>
 
 <form role="form" action="<c:url value="/deletePerson" />" method="POST">
-    <input id="deletePerson" type="submit" class="hidden" name="deletePersonId" class="form-control" type="text"> </input>
+    <input id="deletePerson" type="submit" class="hidden" name="deletePersonId" class="form-control"
+           type="text"> </input>
 </form>
 
 
